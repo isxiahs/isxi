@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #131314;
+    --canvas-card: #1c1b1c;
+    --canvas-elevated: #201f20;
+    --ink-primary: #f4f2ec;
+    --ink-secondary: #c7c7bf;
+    --ink-muted: #7e7e7e;
+    --hairline: #3a3a3c;
+    --hairline-subtle: #262628;
+  }
+
+  body {
+    background-color: #131314;
+    color: #e5e2e3;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.font-grotesk {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Tabular figures for strict numerical alignment */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hairline borders */
+.border-hairline {
+  border-color: #3a3a3c;
+}
+
+.border-hairline-subtle {
+  border-color: #262628;
+}
+
+/* Hide scrollbars where desired while preserving scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animated audio bars */
+@keyframes eq-bounce-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+@keyframes eq-bounce-2 {
+  0%, 100% { height: 12px; }
+  50% { height: 6px; }
+}
+@keyframes eq-bounce-3 {
+  0%, 100% { height: 8px; }
+  50% { height: 18px; }
+}
+@keyframes eq-bounce-4 {
+  0%, 100% { height: 15px; }
+  50% { height: 4px; }
+}
+
+.animate-eq-1 {
+  animation: eq-bounce-1 0.8s ease-in-out infinite;
+}
+.animate-eq-2 {
+  animation: eq-bounce-2 0.7s ease-in-out infinite 0.15s;
+}
+.animate-eq-3 {
+  animation: eq-bounce-3 0.9s ease-in-out infinite 0.3s;
+}
+.animate-eq-4 {
+  animation: eq-bounce-4 0.65s ease-in-out infinite 0.2s;
+}

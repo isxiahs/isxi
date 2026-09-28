@@ -1,0 +1,6 @@
+{
+  "name": "Nocturne Monograph",
+  "description": "Digital monograph & archival publishing platform for nocturnal soundscapes, brutalist architecture, and critical inquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
